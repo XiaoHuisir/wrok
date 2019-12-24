@@ -21,9 +21,7 @@ import java.util.List;
 import butterknife.ButterKnife;
 
 
-/**
- * Created by dell on 2019/5/30.
- */
+
 
 public abstract class BaseActivity<V extends IBaseView, P extends IBasePresenter> extends AppCompatActivity implements IBaseView {
     protected P mPresenter;

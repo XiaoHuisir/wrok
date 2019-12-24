@@ -1,26 +1,18 @@
 package com.example.myapplication;
 
 
-import android.os.Bundle;
 import android.support.design.widget.TabLayout;
 import android.support.v4.app.FragmentManager;
-import android.support.v7.widget.Toolbar;
 import android.widget.FrameLayout;
-import android.widget.Toast;
 
 import com.example.myapplication.base.BaseActivity;
-import com.example.myapplication.bean.Logi_bean;
-import com.example.myapplication.fragment.Activity_Fragment;
 import com.example.myapplication.fragment.Home_Fragment;
-import com.example.myapplication.fragment.My_Fragment;
-import com.example.myapplication.fragment.Neighborhood_Fragment;
+import com.example.myapplication.fragment.Mine_Fragment;
+import com.example.myapplication.fragment.ClassifyFragment;
 import com.example.myapplication.interfaces.contract.Deng_Contracy;
 import com.example.myapplication.presenter.SearchLan_Presenter;
-import com.example.myapplication.utils.ToastUtil;
 
 import butterknife.BindView;
-import butterknife.ButterKnife;
-import butterknife.OnClick;
 
 
 public class MainActivity extends BaseActivity {
@@ -45,10 +37,9 @@ public class MainActivity extends BaseActivity {
     @Override
     protected void initFragments() {
         manager = getSupportFragmentManager();
-        mTl.addTab(mTl.newTab().setText("首页").setIcon(R.mipmap.shouye));
-        mTl.addTab(mTl.newTab().setText("邻里").setIcon(R.mipmap.linli));
-        mTl.addTab(mTl.newTab().setText("活动").setIcon(R.mipmap.huodong));
-        mTl.addTab(mTl.newTab().setText("我的").setIcon(R.mipmap.wode));
+        mTl.addTab(mTl.newTab().setText("首页").setIcon(R.drawable.home));
+        mTl.addTab(mTl.newTab().setText("分类").setIcon(R.drawable.classify));
+        mTl.addTab(mTl.newTab().setText("我的").setIcon(R.drawable.mine));
     }
 
     @Override
@@ -72,11 +63,9 @@ public class MainActivity extends BaseActivity {
                 if (position == 0) {
                     addFragment(manager, Home_Fragment.class, R.id.fl, null);
                 } else if (position == 1) {
-                    addFragment(manager, Neighborhood_Fragment.class, R.id.fl, null);
+                    addFragment(manager, ClassifyFragment.class, R.id.fl, null);
                 } else if (position == 2) {
-                    addFragment(manager, Activity_Fragment.class, R.id.fl, null);
-                } else if (position == 3) {
-                    addFragment(manager, My_Fragment.class, R.id.fl, null);
+                    addFragment(manager, Mine_Fragment.class, R.id.fl, null);
                 }
             }
 
@@ -94,6 +83,6 @@ public class MainActivity extends BaseActivity {
 
     @Override
     public void showError(String errorMsg) {
-
+//        Toast.makeText(this,errorMsg,Toast.LENGTH_LONG).show();
     }
 }

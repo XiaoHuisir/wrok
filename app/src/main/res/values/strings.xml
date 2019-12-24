@@ -2,7 +2,14 @@
     <string name="app_name">My Application</string>
 
     <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="mine_fragment">mine</string>
+    <string name="home_fragment">home</string>
+    <string name="classify_fragment">clasify</string>
+    <string name="beyond_campus">课外学习</string>
+    <string name="training">培训课程</string>
+
+
+    //------------
     <string name="title">中粮·京西祥云</string>
     <string name="entrance">门禁钥匙</string>
     <string name="property">物业管理</string>
@@ -32,7 +39,7 @@
 
    <!--我的-->
     <string name="myhouse">我的房屋</string>
-    <string name="addhouse">添加房屋</string>
+    <string name="addhouse">做登录用</string>
     <string name="householdname">15栋二单元2205 </string>
     <string name="addhouseuser">添加住户</string>
     <string name="housemanagement">住户管理</string>
@@ -55,4 +62,5 @@
     <string name="identity">请选择身份</string>
     <string name="enterthename">请输入姓名</string>
     <string name="mesg">接收呼播信息</string>
+    //---------------
 </resources>

@@ -12,7 +12,7 @@
         android:layout_height="@dimen/dp_20"
         android:layout_marginLeft="@dimen/dp_15"
         android:layout_marginTop="@dimen/dp_14"
-        android:src="@mipmap/back" />
+        android:src="@mipmap/ic_launcher" />
 
     <TextView
         android:layout_width="@dimen/dp_123"

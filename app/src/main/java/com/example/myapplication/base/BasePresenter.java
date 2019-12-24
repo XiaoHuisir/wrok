@@ -9,9 +9,7 @@ import java.lang.ref.WeakReference;
 import io.reactivex.disposables.CompositeDisposable;
 import io.reactivex.disposables.Disposable;
 
-/**
- * Created by dell on 2019/5/30.
- */
+
 
 public class BasePresenter<D extends IBaseView> implements IBasePresenter<D> {
     protected D mView;

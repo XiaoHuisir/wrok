@@ -9,7 +9,7 @@
         android:layout_height="@dimen/dp_17"
         android:layout_marginTop="@dimen/dp_112"
         android:layout_marginLeft="@dimen/dp_52"
-        android:src="@mipmap/shoujihaoma"
+        android:src="@mipmap/ic_launcher"
         />
     <EditText
         android:id="@+id/et_phones"
@@ -54,7 +54,7 @@
         android:id="@+id/weixin"
         android:layout_width="@dimen/dp_28"
         android:layout_height="@dimen/dp_23"
-        android:src="@mipmap/weixin"
+        android:src="@mipmap/ic_launcher"
         android:layout_marginTop="@dimen/dp_343"
         android:layout_marginLeft="@dimen/dp_158"
         android:layout_marginRight="@dimen/dp_158"

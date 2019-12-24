@@ -15,8 +15,6 @@ import com.example.myapplication.R;
 import com.example.myapplication.base.BaseFragment;
 import com.example.myapplication.interfaces.IBasePresenter;
 import com.example.myapplication.presenter.acivity.Verification_acivity;
-import com.example.myapplication.presenter.acivity.Visitors_acivity;
-import com.example.myapplication.presenter.acivity.Visitors_acivity_ViewBinding;
 import com.example.myapplication.utils.MD5Utils;
 
 import java.io.IOException;
@@ -28,7 +26,6 @@ import java.util.List;
 import java.util.Map;
 
 import butterknife.BindView;
-import butterknife.Unbinder;
 import okhttp3.Call;
 import okhttp3.Callback;
 import okhttp3.FormBody;
@@ -37,7 +34,6 @@ import okhttp3.OkHttpClient;
 import okhttp3.Request;
 import okhttp3.RequestBody;
 import okhttp3.Response;
-import okhttp3.ResponseBody;
 
 /**
  * A simple {@link Fragment} subclass.

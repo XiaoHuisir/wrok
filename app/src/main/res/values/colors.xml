@@ -11,4 +11,7 @@
     <color name="shop">#00837B</color>
     <color name="blackmangement">#333333</color>
     <color name="greyhous">#999999</color>
+    <color name="red">#FFEB2121</color>
+    <color name="gray">#FF5E6067</color>
+    <color name="whites">#FFFFFFFF</color>
 </resources>

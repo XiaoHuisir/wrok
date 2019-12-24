@@ -20,15 +20,45 @@
         <android.support.constraint.ConstraintLayout
             android:layout_width="match_parent"
             android:layout_height="@dimen/dp_120">
-
-            <View
+<!--<EditText-->
+    <!--android:layout_marginLeft="@dimen/dp_16"-->
+    <!--android:layout_marginTop="36dp"-->
+    <!--android:layout_width="286dp"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:text="🔍 搜索"-->
+    <!--android:background="@drawable/search_home"-->
+    <!--tools:ignore="MissingConstraints"-->
+    <!--app:layout_constraintLeft_toLeftOf="parent"-->
+    <!--app:layout_constraintTop_toTopOf="parent"/>-->
+            
+            <RelativeLayout
                 android:layout_width="@dimen/dp_286"
                 android:layout_height="@dimen/dp_32"
                 android:layout_marginLeft="@dimen/dp_16"
                 android:layout_marginTop="@dimen/dp_38"
                 android:background="@drawable/search_home"
                 app:layout_constraintLeft_toLeftOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
+                app:layout_constraintTop_toTopOf="parent" >
+                <ImageView
+                    android:layout_alignParentTop="true"
+                    android:layout_marginTop="@dimen/dp_9"
+                    android:layout_marginLeft="@dimen/dp_16"
+                    android:layout_width="@dimen/dp_14"
+                    android:layout_height="@dimen/dp_14"
+                    android:src="@mipmap/icon_search"
+                    />
+                <TextView
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="@dimen/dp_38"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginTop="@dimen/dp_7"
+                    android:layout_width="@dimen/dp_32"
+                    android:layout_height="@dimen/dp_18"
+                    android:text="搜索"
+                    android:textColor="#FF9CA0B5"
+                    android:textSize="@dimen/sp_16"
+                    />
+            </RelativeLayout>
 
             <ImageView
                 android:layout_width="wrap_content"
@@ -155,7 +185,10 @@
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_below="@id/carss">
+                android:minHeight="900dp"
+                android:layout_below="@id/carss"
+                android:descendantFocusability="blocksDescendants"
+                >
                 <android.support.v7.widget.RecyclerView
                     android:layout_width="match_parent"
                     android:layout_height="match_parent" />
